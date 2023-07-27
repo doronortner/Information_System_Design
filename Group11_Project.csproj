@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33A1AD0C-EFA6-44EF-A5EF-6439CD04D38B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Group11_Project</RootNamespace>
+    <AssemblyName>Group11_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.0, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>yaara 4.1\packages\Guna.UI2.WinForms.2.0.4\lib\net461\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Accounts_Control.Designer.cs">
+      <DependentUpon>Accounts_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewExternalEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewExternalEntity.designer.cs">
+      <DependentUpon>AddNewExternalEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewWorker.Designer.cs">
+      <DependentUpon>AddNewWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTask.designer.cs">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllowedOccupation.cs" />
+    <Compile Include="Booking.cs" />
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Desk.cs" />
+    <Compile Include="DeskBookingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeskBookingScreen.designer.cs">
+      <DependentUpon>DeskBookingScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeskType.cs" />
+    <Compile Include="ExternalEntity.cs" />
+    <Compile Include="ExternalEntityAccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExternalEntityAccountManagement.designer.cs">
+      <DependentUpon>ExternalEntityAccountManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalEntityIdentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExternalEntityIdentification.designer.cs">
+      <DependentUpon>ExternalEntityIdentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExternalEntityType.cs" />
+    <Compile Include="Gender.cs" />
+    <Compile Include="Identification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Identification.designer.cs">
+      <DependentUpon>Identification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Label.cs" />
+    <Compile Include="MainMenu_Accounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu_Accounts.designer.cs">
+      <DependentUpon>MainMenu_Accounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu_Main.designer.cs">
+      <DependentUpon>MainMenu_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramMenu_Expenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramMenu_Expenses.Designer.cs">
+      <DependentUpon>ProgramMenu_Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramMenu_Overview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramMenu_Overview.Designer.cs">
+      <DependentUpon>ProgramMenu_Overview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramMenu_Participants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramMenu_Participants.Designer.cs">
+      <DependentUpon>ProgramMenu_Participants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestrictionsScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestrictionsScreen.designer.cs">
+      <DependentUpon>RestrictionsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Task.cs" />
+    <Compile Include="Tasks_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tasks_Control.Designer.cs">
+      <DependentUpon>Tasks_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meetup.cs" />
+    <Compile Include="MeetupTopic.cs" />
+    <Compile Include="ProgramStatus.cs" />
+    <Compile Include="Restriction.cs" />
+    <Compile Include="SAD_11DataSet.cs">
+      <DependentUpon>SAD_11DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sign_Login_Message.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_Login_Message.Designer.cs">
+      <DependentUpon>Sign_Login_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatusTask.cs" />
+    <Compile Include="Tech7program.cs" />
+    <Compile Include="ViewDeskBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewDeskBookings.Designer.cs">
+      <DependentUpon>ViewDeskBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewExteranlEntity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewExteranlEntity.designer.cs">
+      <DependentUpon>ViewExteranlEntity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewWorkers.Designer.cs">
+      <DependentUpon>ViewWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerIdentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerIdentification.designer.cs">
+      <DependentUpon>WorkerIdentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkersAccountManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkersAccountManagement.Designer.cs">
+      <DependentUpon>WorkersAccountManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SAD_11DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_11DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_CON.cs" />
+    <Compile Include="JobTitle.cs" />
+    <Compile Include="Worker.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WorkerStatus.cs" />
+    <Compile Include="WorkerTasksView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkerTasksView.designer.cs">
+      <DependentUpon>WorkerTasksView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Accounts_Control.resx">
+      <DependentUpon>Accounts_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewExternalEntity.resx">
+      <DependentUpon>AddNewExternalEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddNewWorker.resx">
+      <DependentUpon>AddNewWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTask.resx">
+      <DependentUpon>AddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeskBookingScreen.resx">
+      <DependentUpon>DeskBookingScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExternalEntityAccountManagement.resx">
+      <DependentUpon>ExternalEntityAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExternalEntityIdentification.resx">
+      <DependentUpon>ExternalEntityIdentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Identification.resx">
+      <DependentUpon>Identification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu_Accounts.resx">
+      <DependentUpon>MainMenu_Accounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu_Main.resx">
+      <DependentUpon>MainMenu_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramMenu_Expenses.resx">
+      <DependentUpon>ProgramMenu_Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramMenu_Overview.resx">
+      <DependentUpon>ProgramMenu_Overview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramMenu_Participants.resx">
+      <DependentUpon>ProgramMenu_Participants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestrictionsScreen.resx">
+      <DependentUpon>RestrictionsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasks_Control.resx">
+      <DependentUpon>Tasks_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sign_Login_Message.resx">
+      <DependentUpon>Sign_Login_Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewDeskBookings.resx">
+      <DependentUpon>ViewDeskBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewExteranlEntity.resx">
+      <DependentUpon>ViewExteranlEntity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewWorkers.resx">
+      <DependentUpon>ViewWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerIdentification.resx">
+      <DependentUpon>WorkerIdentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkersAccountManagement %281%29.resx" />
+    <EmbeddedResource Include="WorkersAccountManagement.resx">
+      <DependentUpon>WorkersAccountManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkerTasksView.resx">
+      <DependentUpon>WorkerTasksView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SAD_11DataSet.xsc">
+      <DependentUpon>SAD_11DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_11DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_11DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_11DataSet.xss">
+      <DependentUpon>SAD_11DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
